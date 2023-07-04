@@ -24,6 +24,7 @@ import { User } from './users/user.entity';
       inject: [ConfigService]
     }),
     ConfigModule.forRoot(),
+    AuthModule,
     UserModule,
   ],
   controllers: [AppController],
