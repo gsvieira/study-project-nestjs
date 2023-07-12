@@ -43,6 +43,7 @@ import { AuthGuard } from './auth/auth.guard';
       useValue: new ValidationPipe({
         transform: true,
         whitelist: true,
+        forbidNonWhitelisted: true,
       }),
     },
     {
